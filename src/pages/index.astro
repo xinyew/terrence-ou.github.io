@@ -12,48 +12,84 @@ const projects = (await getCollection("projects"))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 
-const stack = [
-  {
-    text: "HTML5",
-    icon: "html5",
-    href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  },
-  {
-    text: "CSS3",
-    icon: "css3",
-    href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  },
-  {
-    text: "Javascript",
-    icon: "javascript",
-    href: "https://www.javascript.com",
-  },
-  {
-    text: "Typescript",
-    icon: "typescript",
-    href: "https://www.typescriptlang.org",
-  },
-  {
-    text: "Python",
-    icon: "python",
-    href: "https://www.python.org/",
-  },
-  {
-    text: "C++",
-    icon: "c++",
-    href: "https://cplusplus.com/",
-  },
-  {
-    text: "Astro",
-    icon: "astro",
-    href: "https://astro.build",
-  },
-  {
-    text: "Tailwind",
-    icon: "tailwind",
-    href: "https://tailwindcss.com",
-  },
-];
+const stack = {
+  languages: [
+    {
+      text: "HTML5",
+      icon: "html5",
+      href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+      text: "CSS3",
+      icon: "css3",
+      href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+      text: "Javascript",
+      icon: "javascript",
+      href: "https://www.javascript.com",
+    },
+    {
+      text: "Typescript",
+      icon: "typescript",
+      href: "https://www.typescriptlang.org",
+    },
+    {
+      text: "Python",
+      icon: "python",
+      href: "https://www.python.org/",
+    },
+    {
+      text: "C++",
+      icon: "c++",
+      href: "https://cplusplus.com/",
+    },
+  ],
+  frameworks: [
+    {
+      text: "Astro",
+      icon: "astro",
+      href: "https://astro.build",
+    },
+    {
+      text: "Next.js",
+      icon: "nextjs",
+      href: "https://nextjs.org/",
+    },
+    {
+      text: "Vite",
+      icon: "vite",
+      href: "https://vitejs.dev/",
+    },
+  ],
+  webdev: [
+    {
+      text: "React/React Native",
+      icon: "react",
+      href: "https://react.dev",
+    },
+    {
+      text: "Redux",
+      icon: "redux",
+      href: "https://redux.js.org/",
+    },
+    {
+      text: "React Router",
+      icon: "react-router",
+      href: "https://reactrouter.com/en/main",
+    },
+    {
+      text: "Nodejs",
+      icon: "nodejs",
+      href: "https://nodejs.org/en",
+    },
+    {
+      text: "Tailwind",
+      icon: "tailwind",
+      href: "https://tailwindcss.com",
+    },
+  ],
+};
 ---
 
 <PageLayout title="Home" description={"Test"}>
@@ -157,10 +193,27 @@ const stack = [
       <!-- Tech Stack Section -->
       <section class="animate">
         <div class="space-y-4">
-          <p class="font-semibold text-black dark:text-white">Tech stack</p>
+          <p class="font-semibold text-black dark:text-white">Tech Stack</p>
+          <p class="text-black dark:text-white">Programming Languages</p>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {
-              stack.map((item) => (
+              stack.languages.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))
+            }
+          </div>
+          <p class="text-black dark:text-white">Web Frameworks</p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {
+              stack.frameworks.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))
+            }
+          </div>
+          <p class="text-black dark:text-white">Web/Mobile Development</p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {
+              stack.webdev.map((item) => (
                 <StackCard text={item.text} icon={item.icon} href={item.href} />
               ))
             }
