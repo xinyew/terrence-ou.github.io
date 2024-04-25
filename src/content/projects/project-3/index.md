@@ -1,12 +1,16 @@
 ---
-title: "Project Three"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 16 2022"
+title: "Translation App"
+summary: "In-browser translator App with DeepL API"
+date: "Mar 18 2022"
 draft: false
 tags:
-- Vue
-- Javascript
+- React
+- API
+- JavaScript
 - Tailwind
+- Vite
+demoUrl: https://clickvisionstudio.github.io/005_translator/
+repoUrl: https://github.com/terrence-ou/Webdev-Mini-Projects/tree/main/005_translator_with_deeplAPI
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+This markdown editor, built with TypeScript, React, and Redux Toolkit, enables users to preview, edit, save, and delete markdown files. The interface also features switchable themes and a responsive layout (but it does not support mobile because the small screen is not ideal for markdown editing, previewing, and file managing that all happen together). The project also uses Tailwindcss and Headless UI for styling.

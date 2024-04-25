@@ -1,15 +1,16 @@
 ---
-title: "Project Two"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 17 2022"
+title: "SICP-JS Solutions Website"
+summary: "A website includes my solutions to the SICP-JS exercises"
+date: "Mar 18 2022"
 draft: false
 tags:
-- Svelte
-- Sveltekit
-- Typescript
+- Astro
+- Remark/Rehype
+- Expressive-Code
+- TypeScript
 - Tailwind
+demoUrl: https://terrence-ou.github.io/SICP-Website/
+repoUrl: https://github.com/terrence-ou/SICP-Website
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+The SICP-JS stands for the book Structure and Interpretation of Computer Programs, JavaScript Edition, written by Harold Abelson and Gerald Jay Sussman and adapted to JavaScript by Martin Henz and Tobias Wrigstad with Julie Sussman. The objective of this tiny side project is to push me to learn the book in depth and share my answers to the exercises in the book with readers who occasionally find this repository.
