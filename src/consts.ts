@@ -46,10 +46,10 @@ export const LINKS: Links = [
     TEXT: "Projects",
     HREF: "/projects",
   },
-  {
-    TEXT: "Experiences",
-    HREF: "/work",
-  },
+  // {
+  //   TEXT: "Experiences",
+  //   HREF: "/work",
+  // },
 ];
 
 // Socials
